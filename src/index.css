@@ -7,7 +7,80 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #547E74;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-image-container label {
+  color: #fff;
+  background-color: #00000055;
+  outline: 0;
+  border: 0;
+  padding: 10px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.upload-image-container input {
+  display: none;
+}
+
+.konvajs-content {
+  margin: 0 auto;
+}
+
+.app-container {
+  padding: 40px;
+}
+
+.image-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-controls .filter {
+  color: #fff;
+  background-color: #3D7164;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 20px 5px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.image-controls .filter.selected {
+  border-color: #ffffff;
+}
+
+.save-button {
+  color: #fff;
+  background-color: #00000055;
+  outline: 0;
+  border: 0;
+  padding: 10px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 20px;
 }
